@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     liblas-dev \
     liblas-c-dev \
     libprotobuf-dev \
-    lbopencv-dev \
+    libopencv-dev \
     mlocate \
     unzip \
     wget \
