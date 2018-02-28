@@ -19,10 +19,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     liblas-dev \
     liblas-c-dev \
     libprotobuf-dev \
+    lbopencv-dev \
     mlocate \
     unzip \
     wget \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* \
-  && wget http://46.163.74.205/opencv_2.4.11-1_amd64.deb \
-  && dpkg -i opencv_2.4.11-1_amd64.deb
+  && rm -rf /var/lib/apt/lists/* 
