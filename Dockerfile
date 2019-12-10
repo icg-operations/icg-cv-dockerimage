@@ -1,4 +1,4 @@
-FROM buildpack-deps:xenial
+FROM buildpack-deps:bionic
 MAINTAINER Michael Opitz <michael.opitz@icg.tugraz.at>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     g++ \
     imagemagick \
-    libatlas-dev \
     libatlas-base-dev \
     libboost-all-dev \
     libblas-dev \
