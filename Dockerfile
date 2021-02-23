@@ -1,4 +1,4 @@
-FROM buildpack-deps:bionic
+FROM buildpack-deps:focal
 MAINTAINER Georg Krispel <georg.krispel@icg.tugraz.at>
 
 ENV DEBIAN_FRONTEND noninteractive
