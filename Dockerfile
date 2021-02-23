@@ -15,10 +15,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libblas-dev \
     libeigen3-dev \
     liblapack-dev \
-    liblas-dev \
-    liblas-c-dev \
     libprotobuf-dev \
     libopencv-dev \
+    python3-opencv \
     libopencv-contrib-dev \
     mlocate \
     unzip \
