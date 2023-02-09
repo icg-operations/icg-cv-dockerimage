@@ -1,5 +1,5 @@
-FROM buildpack-deps:focal
-MAINTAINER Georg Krispel <georg.krispel@icg.tugraz.at>
+FROM buildpack-deps:jammy
+LABEL org.opencontainers.image.authors="Georg Krispel <georg.krispel@icg.tugraz.at>"
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     git \
     g++ \
+    gdb \
     imagemagick \
     libatlas-base-dev \
     libboost-all-dev \
@@ -22,5 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     mlocate \
     unzip \
     wget \
+    valgrind \
+    python3-clang-13 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* 
